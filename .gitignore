@@ -1,0 +1,5 @@
+.venv
+.env
+.DS_STORE
+tmp.mp3
+transcription.txt
