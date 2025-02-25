@@ -24,7 +24,7 @@ pip install google-genai python-dotenv
 ### Example / 範例:
 
 ```bash
-python transcribe.py
+python test.py
 ```
 
 The result will be saved as `transcription.txt` in the same directory.
@@ -33,7 +33,7 @@ The result will be saved as `transcription.txt` in the same directory.
 
 ### Steps:
 1. **Load environment variables**: The `.env` file is loaded to access your API key.
-2. **Transcribe audio**: The audio file is read as bytes, and the MIME type is determined based on the file extension (`.mp3` or `.m4a`).
+2. **Transcribe audio**: The audio file is read as bytes, and the MIME type is determined based on the file extension (`.mp3` or `.m4a`) remember to name your autio as "tmp.mp3" or "tmp.m4a".
 3. **Generate transcription and translation**: A prompt is sent to Gemini API to generate both the original transcription and its English translation. Timestamps can be included.
 4. **Save the result**: The transcriptions are saved into a `.txt` file.
 
